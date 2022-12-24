@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+            style="-fx-background-color: lightgrey; -fx-border-color: black;"
+            xmlns="http://javafx.com/javafx/10.0.2-internal"
+            fx:controller="com.group17.game.controller.GameController">
+    <left>
+        <VBox alignment="TOP_CENTER" prefHeight="200.0"
+              BorderPane.alignment="CENTER">
+            <Label fx:id="lbl_inventory" style="-fx-underline: true;"
+                   text="Inventory">
+                <font>
+                    <Font name="Segoe UI Italic" size="24.0"/>
+                </font>
+            </Label>
+            <ListView fx:id="lst_inventory" focusTraversable="false"
+                      mouseTransparent="true" stylesheets="@styles.css">
+                <VBox.margin>
+                    <Insets top="20.0"/>
+                </VBox.margin>
+            </ListView>
+            <Label fx:id="lbl_fov" style="-fx-underline: true;" text="FOV">
+                <font>
+                    <Font name="Segoe UI Italic" size="24.0"/>
+                </font>
+                <VBox.margin>
+                    <Insets top="20.0"/>
+                </VBox.margin>
+            </Label>
+            <Label id="button" fx:id="btn_zoomIn"
+                   onMouseClicked="#onClickBtnZoomIn" stylesheets="@styles.css"
+                   text="ZOOM IN">
+                <font>
+                    <Font name="Segoe UI Semibold" size="24.0"/>
+                </font>
+                <VBox.margin>
+                    <Insets top="20.0"/>
+                </VBox.margin>
+            </Label>
+            <Label id="button" fx:id="btn_zoomOut"
+                   onMouseClicked="#onClickBtnZoomOut" stylesheets="@styles.css"
+                   text="ZOOM OUT">
+                <font>
+                    <Font name="Segoe UI Semibold" size="24.0"/>
+                </font>
+                <VBox.margin>
+                    <Insets top="20.0"/>
+                </VBox.margin>
+            </Label>
+        </VBox>
+    </left>
+    <padding>
+        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0"/>
+    </padding>
+    <right>
+        <VBox alignment="BOTTOM_CENTER" prefHeight="200.0"
+              BorderPane.alignment="CENTER"/>
+    </right>
+    <center>
+        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0"
+              BorderPane.alignment="CENTER">
+            <Canvas fx:id="canvas" height="500.0" width="500.0">
+                <VBox.margin>
+                    <Insets bottom="20.0" left="20.0" right="20.0"/>
+                </VBox.margin>
+            </Canvas>
+        </VBox>
+    </center>
+    <top>
+        <VBox alignment="CENTER" prefWidth="100.0"
+              BorderPane.alignment="CENTER">
+            <Label fx:id="lbl_title" text="Level">
+                <font>
+                    <Font name="Segoe UI Black Italic" size="40.0"/>
+                </font>
+            </Label>
+            <Label fx:id="lbl_timer" text="Timer" textAlignment="CENTER"
+                   wrapText="true">
+                <font>
+                    <Font name="Segoe UI Semibold" size="24.0"/>
+                </font>
+            </Label>
+            <BorderPane.margin>
+                <Insets bottom="20.0"/>
+            </BorderPane.margin>
+        </VBox>
+    </top>
+    <bottom>
+        <VBox alignment="CENTER" prefWidth="100.0"
+              BorderPane.alignment="CENTER">
+            <Label id="button" fx:id="btn_exit" onMouseClicked="#onClickBtnSave"
+                   stylesheets="@styles.css"
+                   text="SAVE &amp; RETURN TO MENU">
+                <font>
+                    <Font name="Segoe UI Semibold" size="24.0"/>
+                </font>
+            </Label>
+            <HBox alignment="CENTER" prefWidth="200.0">
+                <ComboBox fx:id="cmb_language" focusTraversable="false"
+                          onAction="#setLanguage" promptText="🌍">
+                    <HBox.margin>
+                        <Insets right="20.0"/>
+                    </HBox.margin>
+                </ComboBox>
+                <Label fx:id="lbl_currentProfile" alignment="TOP_LEFT"
+                       text="Current Profile: ">
+                    <font>
+                        <Font name="Segoe UI Italic" size="14.0"/>
+                    </font>
+                    <HBox.margin>
+                        <Insets right="10.0"/>
+                    </HBox.margin>
+                </Label>
+                <Label fx:id="lbl_profile" alignment="TOP_LEFT" text="None">
+                    <font>
+                        <Font name="Segoe UI" size="14.0"/>
+                    </font>
+                </Label>
+            </HBox>
+        </VBox>
+    </bottom>
+</BorderPane>
