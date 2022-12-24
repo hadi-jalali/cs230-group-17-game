@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+            style="-fx-background-color: lightgrey; -fx-border-color: black;"
+            xmlns="http://javafx.com/javafx/10.0.2-internal"
+            fx:controller="com.group17.game.controller.CharacterController">
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="800"
+              BorderPane.alignment="CENTER">
+            <ComboBox fx:id="cmb_language" focusTraversable="false"
+                      onAction="#setLanguage" promptText="🌍">
+                <HBox.margin>
+                    <Insets right="20.0"/>
+                </HBox.margin>
+            </ComboBox>
+            <Label fx:id="lbl_currentProfile" text="Current Profile: ">
+                <font>
+                    <Font name="Segoe UI Italic" size="14.0"/>
+                </font>
+                <HBox.margin>
+                    <Insets right="10.0"/>
+                </HBox.margin>
+            </Label>
+            <Label fx:id="lbl_profile" text="None">
+                <font>
+                    <Font name="Segoe UI" size="14.0"/>
+                </font>
+            </Label>
+        </HBox>
+    </bottom>
+    <left>
+        <VBox alignment="TOP_CENTER" prefHeight="200.0"
+              BorderPane.alignment="CENTER"/>
+    </left>
+    <padding>
+        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0"/>
+    </padding>
+    <right>
+        <VBox alignment="BOTTOM_CENTER" prefHeight="200.0"
+              BorderPane.alignment="CENTER"/>
+    </right>
+    <center>
+        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0"
+              BorderPane.alignment="CENTER">
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                <ImageView fx:id="img_man" fitHeight="300.0" fitWidth="300.0"
+                           onMouseClicked="#onClickImgMan"
+                           pickOnBounds="true" preserveRatio="true">
+                    <HBox.margin>
+                        <Insets right="20.0"/>
+                    </HBox.margin>
+                </ImageView>
+                <ImageView fx:id="img_woman" fitHeight="300.0" fitWidth="300.0"
+                           onMouseClicked="#onClickImgWoman"
+                           pickOnBounds="true" preserveRatio="true">
+                    <HBox.margin>
+                        <Insets left="20.0"/>
+                    </HBox.margin>
+                </ImageView>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                <Label id="button" fx:id="btn_back"
+                       onMouseClicked="#onClickBtnBack"
+                       stylesheets="@styles.css"
+                       text="&lt; BACK">
+                    <font>
+                        <Font name="Segoe UI Semibold" size="24.0"/>
+                    </font>
+                    <HBox.margin>
+                        <Insets right="10.0" top="20.0"/>
+                    </HBox.margin>
+                </Label>
+            </HBox>
+        </VBox>
+    </center>
+    <top>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0"
+              BorderPane.alignment="CENTER">
+            <Label fx:id="lbl_title" text="Character Selection">
+                <font>
+                    <Font name="Segoe UI Black Italic" size="40.0"/>
+                </font>
+            </Label>
+            <Label fx:id="lbl_subtitle"
+                   text="Select an adventurer to play as..."
+                   textAlignment="CENTER"
+                   wrapText="true">
+                <font>
+                    <Font name="Segoe UI Light" size="18.0"/>
+                </font>
+            </Label>
+        </VBox>
+    </top>
+</BorderPane>

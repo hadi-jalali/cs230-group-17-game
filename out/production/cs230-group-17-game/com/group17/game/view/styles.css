@@ -1,0 +1,28 @@
+#button:hover {
+    -fx-text-fill: blue;
+    -fx-font-weight: bold;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}
+
+.list-cell, .combo-box {
+    -fx-font-size: 24.0;
+    -fx-font-family: "Segoe UI";
+}
+
+.list-cell:even, .combo-box:even {
+    -fx-background-color: white;
+}
+
+.list-cell:odd, .combo-box:odd {
+    -fx-background-color: #dadada;
+}
+
+.list-cell:filled:hover, .combo-box:hover {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
+

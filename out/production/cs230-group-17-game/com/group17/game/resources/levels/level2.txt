@@ -1,0 +1,19 @@
+<Level File>
+2;Level 2
+14,12;1,1;12,9
+
+9,8,smart,left;4,8,line,right
+10,1,fire;10,2,fire;10,3,fire;11,1,fire;11,2,fire;11,3,fire;10,5,water;10,6,water;10,7,water;11,5,water;11,6,water;11,7,water
+8,10,water boots;12,7,fire boots
+##############
+#  #         #
+#  #        @#
+# ##         #
+# #       ####
+# #         @#
+#            #
+#            #
+##3#      ####
+#  #      #  #
+#b # @    B  #
+##############
