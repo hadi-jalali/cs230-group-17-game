@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ResourceBundleManager">
+    <file url="file://$PROJECT_DIR$/src/com/group17/game/locale/lang_en.properties" />
+    <file url="file://$PROJECT_DIR$/src/com/group17/game/locale/lang_fa.properties" />
+    <file url="file://$PROJECT_DIR$/src/com/group17/game/locale/lang_ru.properties" />
+    <file url="file://$PROJECT_DIR$/src/com/group17/game/locale/lang_tr.properties" />
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/src/com/group17/game/locale/lang_en.properties" />
+      <file value="file://$PROJECT_DIR$/src/com/group17/game/locale/lang_fa.properties" />
+      <file value="file://$PROJECT_DIR$/src/com/group17/game/locale/lang_ru.properties" />
+      <file value="file://$PROJECT_DIR$/src/com/group17/game/locale/lang_tr.properties" />
+      <file value="file://$PROJECT_DIR$/src/com/group17/game/locale/lang_uk.properties" />
+      <base-name>lang</base-name>
+    </custom-resource-bundle>
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/src/com/group17/game/locale/lang_en.properties" />
+      <file value="file://$PROJECT_DIR$/src/com/group17/game/locale/lang_fa.properties" />
+      <file value="file://$PROJECT_DIR$/src/com/group17/game/locale/lang_ru.properties" />
+      <file value="file://$PROJECT_DIR$/src/com/group17/game/locale/lang_tr.properties" />
+      <base-name>lang</base-name>
+    </custom-resource-bundle>
+  </component>
+</project>

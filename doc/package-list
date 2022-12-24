@@ -1,0 +1,8 @@
+com.group17.game
+com.group17.game.controller
+com.group17.game.core
+com.group17.game.model
+com.group17.game.model.entity
+com.group17.game.model.entity.enemy
+com.group17.game.model.entity.item
+com.group17.game.model.world
